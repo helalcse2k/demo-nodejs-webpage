@@ -20,7 +20,7 @@ jobs:
           name: Build Docker image
           command:  |
             docker build -t nodejswebapp1 -t helaldckrhub/nodejswebapp1:latest .
-            echo $DOCKER_PASSWORD | docker login -u helaldcrhub --password-stdin
+            echo $DOCKER_PASSWORD | docker login -u helaldckrhub --password-stdin
             docker push helaldckrhub/nodejswebapp1:latest
 workflows:
   build_test:
